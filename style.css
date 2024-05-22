@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width:1200px){
+  .container{
+      width: 90%;
+
+  }
+}
+
+.section-title{
+  margin: 1rem 0 3rem;
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.9rem;
+}   
+
+.grid-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 2rem;
+}
+
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav { 
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  
+}
+
+.nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav span{
+  color: red;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+#about{
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 40%;
+  padding-left: 2rem;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+#visi{
+  background: rgb(246, 246, 246);
+  padding: 4rem 0;
+}
+
+
+.visimisi-title {
+  text-align: center;
+   span{
+    color: red;
+   }
+}
+
+.vm {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: rgb(220, 220, 220);
+  border-radius: 0.8rem;
+  
+}
+
+.vm h4 {
+  margin: 1 0;
+  font-weight: 700;
+}
+
+.visimisi-icon {
+  background: rgb(0, 0, 0);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: .5rem;
+}
+
+.visimisi-icon svg {
+  fill: rgb(255, 255, 255);
+}
+
+.team-title {
+  padding-top: 4rem;
+  text-align: center;
+   span{
+    color: red;
+   }
+}
+
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 3rem 0;
+  border-radius: 0.8rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 3rem 2rem;
+  align-items: center;
+ 
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.portofolios {
+  padding: 3rem 1.3rem;
+  span{
+  color: red;
+  }
+}
+
+.portofolio {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: rgb(246, 246, 246);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+
+.portfolio-cover {
+  height: 250px;
+ 
+}
+
+.portfolio-cover img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-info{
+  padding: 2rem 1.5rem; 
+  p{
+    text-align: justify;
+  }
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.portfolio h4 {
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.portfolio-title a svg:hover {
+  fill: var(--secondaryTextColor);
+}
+
+footer{
+  padding: 1rem 0;
+  background: rgb(220, 220, 220) ;
+  text-align: center;
+}
+
+.footer-icons{
+  margin-bottom: 1rem;
+}
+
+.footer-icons a{
+  margin: 0 .5rem;
+}
+
+.footer-icons svg {
+  fill: red;
+}
+
+.footer-icons a:hover svg{
+  fill: rgb(78, 0, 0);
+}   
+
+
+
+
+
